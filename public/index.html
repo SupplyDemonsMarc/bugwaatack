@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 DEVIL BUG WA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="devil-bg">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <!-- HEADER -->
+            <div class="header">
+                <div class="devil-icon">
+                    <span class="pixel-devil">👿</span>
+                    <span class="glow">DEVIL BUG</span>
+                </div>
+                <div class="status-wrapper">
+                    <span id="status" class="status disconnected">● OFF</span>
+                </div>
+            </div>
+
+            <!-- PAIRING -->
+            <div class="panel pair-panel">
+                <h3>📱 PAIR DEVICE</h3>
+                <p class="sub">Masukkan nomor WhatsApp lo (tanpa QR)</p>
+                <div class="input-group">
+                    <input type="text" id="pair-number" placeholder="628123456789">
+                    <button id="pair-btn">🔗 PAIR</button>
+                </div>
+                <div id="pairing-result" class="pair-result"></div>
+            </div>
+
+            <!-- BUG PANEL -->
+            <div class="panel bug-panel">
+                <h3>💀 SEND DEVIL BUG</h3>
+                <div class="input-group">
+                    <input type="text" id="target-numbers" placeholder="Nomor target (pisah koma)">
+                </div>
+                <div class="bug-types">
+                    <button class="bug-btn ultimate" data-type="ultimate">🔥 ULTIMATE</button>
+                    <button class="bug-btn crash" data-type="crash">💀 CRASH</button>
+                    <button class="bug-btn flood" data-type="flood">🌀 FLOOD</button>
+                </div>
+                <button id="send-btn" class="send-btn">☠️ SEND BUG</button>
+            </div>
+
+            <!-- LOG -->
+            <div class="panel log-panel">
+                <h3>📋 BLOOD LOG</h3>
+                <div id="log-container">
+                    <div class="log-empty">⚔️ Waiting for blood...</div>
+                </div>
+            </div>
+
+            <!-- FOOTER PIXEL DEVIL -->
+            <div class="footer">
+                <pre class="pixel-art">
+    ██████  ███████ ██    ██ ██ ██      
+    ██   ██ ██      ██    ██ ██ ██      
+    ██████  █████   ██    ██ ██ ██      
+    ██   ██ ██       ██  ██  ██ ██      
+    ██████  ███████   ████   ██ ███████ 
+                </pre>
+                <p class="slogan">"I just give the tools, whether they're used right or not is your business, boss."</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
